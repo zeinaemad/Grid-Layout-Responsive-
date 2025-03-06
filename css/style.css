@@ -609,10 +609,11 @@ Global properties
 /* The Media Query for a responsive Grid */
 
 /* Smallest Screens (max-width: 640px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   .container {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 0.5fr;
+
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      /*grid-template-rows: 1fr 1fr 1fr 0.5fr;*/
   }
 }
 
@@ -620,8 +621,14 @@ Global properties
 /* Extra Large Screens (min-width: 1280px) */
 @media screen and (min-width: 1280px) {
   .container {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 0.5fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+      grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+      grid-template-areas:
+            "section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1 "
+            "section-3 section-3 section-3 section-3 section-4 section-4 section-4 section-4 section-4 section-4 section-4 section-4 section-5 section-5 section-5 section-5"
+            "section-6 section-6 section-6 section-6 section-7 section-7 section-7 section-7 section-7 section-7 section-7 section-7 section-5 section-5 section-5 section-5"
+            "section-8 section-8 section-8 section-8 section-9 section-9 section-9 section-9 section-10 section-10 section-10 section-10 section-10 section-10 section-10 section-10";
+
   }
 }
 

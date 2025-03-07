@@ -612,8 +612,7 @@ Global properties
 @media screen and (max-width: 640px) {
   .container {
 
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
-    ksjdnqkjdnqdn
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
